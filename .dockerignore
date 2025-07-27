@@ -1,0 +1,9 @@
+# Ignore unnecessary dev files
+node_modules
+.git
+.yarn/cache
+*.log
+
+# DO NOT ignore these — we need them for deploy
+# dist
+# .medusa
