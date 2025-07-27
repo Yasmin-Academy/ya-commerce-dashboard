@@ -1,15 +1,20 @@
+# Use Node 18
 FROM node:18
 
+# Set working directory to /app
 WORKDIR /app
 
-# Enable Yarn (via Corepack)
-RUN npm install -g corepack && corepack enable
-
-# Copy entire local build context
+# Copy everything (including .medusa)
 COPY . .
 
-# Install only production dependencies using Yarn 4 syntax
-RUN yarn workspaces focus --all --production
+# Install corepack to support yarn v4
+RUN npm install -g corepack && corepack enable
 
-# Start the prebuilt server directly
-CMD ["node", ".medusa/server"]
+# Go into the Medusa server directory
+WORKDIR /app/.medusa/server
+
+# Install dependencies
+RUN yarn install
+
+# Start Medusa server in dev mode
+CMD ["yarn", "dev"]
