@@ -13580,6 +13580,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"posthog-node@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "posthog-node@npm:5.6.0"
+  checksum: 10c0/38e9e78e50baa190c8617749e11c0c7aa089fc49e75010be359f27fb1304415ab8257195a5ea00ee0de96fe03a517bcda249902f6691676e9e43665a7caf8ca2
+  languageName: node
+  linkType: hard
+
 "pretty-format@npm:^29.0.0, pretty-format@npm:^29.7.0":
   version: 29.7.0
   resolution: "pretty-format@npm:29.7.0"
@@ -15655,7 +15662,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^5.2.11, vite@npm:^5.4.14":
+"vite@npm:^5.4.14":
   version: 5.4.14
   resolution: "vite@npm:5.4.14"
   dependencies:
@@ -15921,12 +15928,12 @@ __metadata:
     awilix: "npm:^8.0.1"
     jest: "npm:^29.7.0"
     pg: "npm:^8.13.0"
+    posthog-node: "npm:^5.6.0"
     prop-types: "npm:^15.8.1"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     ts-node: "npm:^10.9.2"
     typescript: "npm:^5.6.2"
-    vite: "npm:^5.2.11"
     yalc: "npm:^1.0.0-pre.53"
   languageName: unknown
   linkType: soft
